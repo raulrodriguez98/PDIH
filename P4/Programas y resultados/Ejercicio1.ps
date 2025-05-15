@@ -1,0 +1,64 @@
+%!PS
+
+% Definir color marrón
+/brown {0.55 0.27 0.07 setrgbcolor} def
+% Definir color verde
+/green {0 0.6 0 setrgbcolor} def
+% Definir color rojo
+/red {1 0 0 setrgbcolor} def
+
+% Dibujar tronco del árbol grande
+brown
+newpath
+100 100 moveto
+20 0 rlineto
+0 100 rlineto
+-20 0 rlineto
+closepath
+fill
+
+% Dibujar copa del árbol grande
+green
+newpath
+110 200 40 0 360 arc
+fill
+newpath
+90 220 40 0 360 arc
+fill
+newpath
+130 220 40 0 360 arc
+fill
+
+% Dibujar tronco del árbol pequeño
+brown
+newpath
+200 100 moveto
+12 0 rlineto
+0 60 rlineto
+-12 0 rlineto
+closepath
+fill
+
+% Dibujar copa del árbol pequeño
+green
+newpath
+206 160 25 0 360 arc
+fill
+newpath
+190 175 25 0 360 arc
+fill
+newpath
+222 175 25 0 360 arc
+fill
+
+% Dibujar círculo pequeño (círculo verde con borde rojo)
+newpath
+150 90 10 0 360 arc
+green
+fill
+newpath
+150 90 10 0 360 arc
+red
+stroke
+
+showpage

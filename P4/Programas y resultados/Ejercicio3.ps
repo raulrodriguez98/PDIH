@@ -1,0 +1,42 @@
+%!PS
+
+% Definir colores
+/rojo {1 0 0 setrgbcolor} def
+/negro {0 setgray} def
+
+% Dibujar círculo izquierdo
+rojo
+newpath
+150 600 50 0 360 arc
+fill
+
+% Dibujar círculo derecho
+rojo
+newpath
+250 600 50 0 360 arc
+fill
+
+% Dibujar parte inferior del corazón
+rojo
+newpath
+110 570 moveto
+90 30 rlineto
+90 -30 rlineto
+-90 -100 rlineto
+closepath
+fill
+
+% Añadir poesía a la derecha
+/Helvetica-Bold findfont 12 scalefont setfont
+
+negro
+340 600 moveto
+(A veces el alma calla,) show
+340 580 moveto
+(aunque el pecho quiera hablar,) show
+340 560 moveto
+(porque hay dolores tan hondos,) show
+340 540 moveto
+(que no se pueden nombrar.) show
+
+showpage

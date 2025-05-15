@@ -1,0 +1,55 @@
+%!PS
+
+% Definir colores
+/lightgray {0.9 setgray} def
+/gray {0.75 setgray} def
+/black {0 setgray} def
+
+% Dibujar fondo rectangular (zona del contenido)
+lightgray
+newpath
+85 500 moveto     % esquina inferior izquierda
+350 0 rlineto      % ancho del rectángulo
+0 175 rlineto      % altura
+-350 0 rlineto
+closepath
+fill
+
+% Dibujar círculo gris
+gray
+newpath
+150 600 50 0 360 arc
+fill
+
+% Borde del círculo
+black
+newpath
+150 600 50 0 360 arc
+stroke
+
+% Texto
+/Helvetica-Bold findfont 12 scalefont setfont
+black
+240 630 moveto
+(Gabriel y Raul) show
+
+/Helvetica findfont 10 scalefont setfont
+240 615 moveto
+(Estudiantes de Informatica) show
+
+240 590 moveto
+(Calle Periodista, 20) show
+
+240 575 moveto
+(Local 2 - ETSIIT) show
+
+240 560 moveto
+(18003 Granada) show
+
+240 545 moveto
+(Tels. 630 630 630 / 698 698 698) show
+
+240 530 moveto
+(gabriel@ugr.es / raul@ugr.es) show
+
+showpage

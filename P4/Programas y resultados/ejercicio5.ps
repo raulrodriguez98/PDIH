@@ -1,0 +1,113 @@
+%!
+
+%% INICIO DE LA PRIMERA PÁGINA
+
+/Times-Roman findfont 
+24 scalefont 
+setfont 
+
+%% Recuadro exterior
+newpath
+100 500 moveto
+250 0 rlineto
+0 100 rlineto
+-250  0 rlineto
+closepath
+0.5 setlinewidth
+stroke
+
+%% Línea celdas horizontal
+newpath
+100 550 moveto
+250 0 rlineto
+closepath
+0.5 setlinewidth
+stroke
+
+
+%% Línea celdas vertical
+newpath
+225 500 moveto
+0 100 rlineto
+closepath
+0.5 setlinewidth
+stroke
+
+
+%% Título de la tabla
+newpath 
+0 0 0 setrgbcolor
+100 750 moveto
+(Mi tabla de datos) show 
+stroke
+
+%% Nombre columna 1
+newpath 
+0 0 0 setrgbcolor
+110 570 moveto
+(Columna-1) show 
+stroke
+
+%% Nombre columna 2
+newpath 
+0 0 0 setrgbcolor
+230 570 moveto
+(Columna-2) show 
+stroke
+
+%% Dato columna 1
+newpath 
+0 0 0 setrgbcolor
+110 520 moveto
+(42) show 
+stroke
+
+%% Dato columna 2
+newpath 
+0 0 0 setrgbcolor
+230 520 moveto
+(21) show 
+stroke
+
+
+%% FIN DE LA PRIMERA PÁGINA
+showpage
+
+%% INICIO DE LA SEGUNDA PÁGINA
+
+/Times-Roman findfont 
+24 scalefont 
+setfont 
+
+
+%% Título de la gráfica
+newpath 
+0 0 0 setrgbcolor
+100 750 moveto
+(La imagen) show 
+stroke
+
+
+%% Ejes de la gráfica
+newpath
+200 700 moveto
+0 -150 rlineto
+300 0 rlineto
+0.5 setlinewidth
+stroke
+
+%% Gráfica
+newpath
+220 650 moveto
+50 -40 rlineto
+50 60 rlineto
+70 -75 rlineto
+70 95 rlineto
+0.5 setlinewidth
+1 0 0 setrgbcolor
+stroke
+
+
+%% FIN DE LA SEGUNDA PÁGINA
+showpage
+
